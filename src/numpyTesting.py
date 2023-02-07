@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as pt
 
 d={}
-for i in range(500):
+for i in range(100000000): #the larger the number will be the probability of getting zero will increase
     rand_array=2*(np.random.rand(1,1000)>0.5)-1
     v=sum(rand_array[0])
     d[v]=d.get(v,0)+1
